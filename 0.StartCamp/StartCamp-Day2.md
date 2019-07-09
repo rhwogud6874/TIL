@@ -185,19 +185,38 @@ for r in tr:
 ### github 올리기
 
 1. github 회원가입
+
 2. Git GUI에서 
 	git init
 	ls -a
 	touch .gitignore
+	
 3. https://gitignore.io 들어가서 python, window, visualstudiocode 누른 후 복사
+
 4. visualstudiocode 들어가서 .gitignore 파일에 내용 붙혀넣기
+
 5. Git GUI에서
 	git add.
-	git commit -m "first commit"
+	git commit -m "first commit" ##적을 내용은 주서같은 내용으로 설명 작성
 	git config --global user.email "rhwogud6874@gmail.com"
 	git config --global user.name "rhwogud6874"
 	git add
 	git commit -m "first commit"
+	
 6. 깃헙에서 우측상단 +New repository
 	git remote add origin https://github.com/rhwogud6874/startcamp.git
+	
+	 ##위 내용은 +New repository를 작성시에 나오는 문구이다.
+	
 7. git push origin master
+
+8. 폴더 지정하고 올리기
+    git init  ##master 폴더 지정
+    git add .
+    git commit -m "몇번째차례"
+    git push origin master
+  
+9. 타인에 의해 수정된점 가져오기
+	git pull origin master
+
+
